@@ -1,0 +1,20 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Git
+.git
+.gitignore
+
+# Ignore Jenkins workspace artifacts
+workspace/
+
+# Ignore database/data directories
+data/
+*.db
+*.sql
+
+# Ignore Docker files
+Dockerfile*
+.dockerignore
