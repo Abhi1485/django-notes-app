@@ -3,6 +3,9 @@ FROM python:3.9
 WORKDIR /app/backend
 
 COPY requirements.txt /app/backend
+COPY manage.py . 
+COPY myproject/ ./myproject/
+
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y gcc default-libmysqlclient-dev pkg-config \
